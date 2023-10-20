@@ -1,0 +1,285 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+.menu {
+    position: fixed;
+    top: 0;
+    right: 0;
+    background-color: transparent;
+    z-index: 1;
+}
+
+.menu .menu-icon {
+    color: #fff;
+    text-align: center;
+    padding: 12px;
+    cursor: pointer;
+}
+
+.menu .menu-content {
+    display: none;
+    position: fixed;
+    top: 40px;
+    right: 10px;
+    background-color: #4CAF50;
+    color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.menu .menu-content a {
+    display: block;
+    color: #fff;
+    text-decoration: none;
+    margin-bottom: 10px;
+}
+
+.menu .menu-content a:hover {
+    text-decoration: underline;
+}
+
+.menu-dropdown {
+    display: none; 
+    position: absolute;
+    top: 25px; 
+    right: 10px;
+    background-color: #ffffff;
+    color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+    flex-direction: column;
+    z-index: 2;
+}
+
+.show-menu-dropdown {
+    display: flex;
+}
+
+.capa {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    background-image: url("/assets/img/img_paisagismo_1.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: relative;
+}
+
+.capa::before {
+    content: "";
+    background: rgba(49, 48, 48, 0.7);
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+
+.capa-text {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px;
+    position: relative;
+}
+
+.capa-text h1 {
+    margin: 0;
+    font-size: 4em;
+    color: #fff;
+}
+
+.capa-text p {
+    font-size: 1.8em;
+    margin: 0;
+    color: #fff;
+}
+
+.capa-logo {
+    position: relative;
+    top: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    height: 100%;
+    padding: 10px;
+}
+
+.capa-logo img {
+    display: block;
+    width: auto;
+    max-height: 100%;
+    height: 200px;
+    padding-left: 200px;
+}
+
+section {
+    padding: 20px;
+    background-color: #fff;
+}
+
+.servicos {
+    background-color: #52f35a5e;
+    padding: 40px 0;
+    text-align: center;
+}
+
+.servicos h2 {
+    font-size: 2.5em;
+    color: #333;
+    margin-bottom: 30px;
+}
+
+.servicos-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+.servico {
+    flex-basis: calc(25% - 20px);
+    background-color: #fff;
+    padding: 30px;
+    text-align: center;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    transition: transform 0.3s;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.servico i {
+    font-size: 2.5em;
+    color: #00c707;
+    margin-bottom: 20px;
+}
+
+.servico h3 {
+    font-size: 1.8em;
+    color: #333;
+}
+
+.servico p {
+    font-size: 1em;
+    color: #666;
+}
+
+.servico:hover {
+    transform: translateY(-5px);
+}
+.contato {
+    background-color: #f2f2f2;
+    padding: 40px;
+    text-align: center;
+}
+
+.contato {
+    background-color: #f2f2f2;
+    padding: 40px;
+    text-align: center;
+}
+
+.contato h2 {
+    font-size: 2.5em;
+    color: #333;
+    margin-bottom: 30px;
+}
+
+.contato-container {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+.informacoes-contato {
+    flex-basis: 45%;
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    text-align: left;
+}
+
+.info-box {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.info-box i {
+    font-size: 2em;
+    color: #00c707;
+    margin-right: 10px;
+}
+
+.info-box .instagram-icon {
+    font-size: 1.5em;
+    color: #e4405f;
+    margin-right: 10px;
+}
+
+.info-box .whatsapp-icon {
+    font-size: 1.5em;
+    color: #25d366;
+    margin-right: 10px;
+}
+
+.formulario-contato {
+    flex-basis: 50%;
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    text-align: left;
+}
+
+.formulario-contato h3 {
+    font-size: 1.8em;
+    color: #333;
+}
+
+form label {
+    display: block;
+    margin-top: 10px;
+    font-weight: bold;
+    color: #333;
+}
+
+form input, form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+form button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: #00c707;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.2em;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #009606;
+}
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #333;
+    color: #fff;
+}
